@@ -1,23 +1,20 @@
-import Header from "./components/Header";
-import Category from "./components/Category";
-import Banner from "./components/Banner";
-import SubHeading from "./components/SubHeading";
-import MovieCard from "./components/MovieCard";
-import Bottom from "./components/Bottom";
-import Fot from "./components/Fot";
-import './App.css'
 
+import './App.css'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import User from './routes/User'
+import Admin from './routes/Admin'
 function App() {
+  
   return(
-    <div className=" bg-black">
-    <Header/>
-    <Category/>
-    <Banner/>
-    <SubHeading/>
-    <MovieCard/>
-    <Bottom/>
-    <Fot/>
-  </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+    <Route path='/*' element={<User/>}/>
+    <Route path='/Admin/*' element={<Admin/>}/>
+    
+      </Routes>
+    </BrowserRouter>
+    </>
   )
   
 }

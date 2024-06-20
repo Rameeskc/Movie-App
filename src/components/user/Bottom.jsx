@@ -3,8 +3,8 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
-import logo2 from "../assets/appleStore.svg";
-import logo3 from "../assets/googlePlay.svg";
+import logo2 from "../../assets/appleStore.svg";
+import logo3 from "../../assets/googlePlay.svg";
 
 const Bottom = () => {
   const links = [
@@ -66,7 +66,7 @@ const Bottom = () => {
 
   return (
     <>
-      <div className=" flex flex-col w-full h-[600px] mt-16 md:h-[300px]">
+      <div className=" flex flex-col w-full h-[600px]  md:h-[300px]">
         <div className="flex flex-col h-[600px] w-full md:flex-row md:h-[300px] bg-[#17181a] py-12 border-gray-500">
           <div className=" flex">
             <div className=" h-[200px] w-[200px]">

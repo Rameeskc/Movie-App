@@ -1,8 +1,8 @@
 import React from "react";
-import logo  from "../assets/logo.png";
+import logo  from "../../assets/logo.png";
 import { FaUserCircle } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
-import Fot from "../components/Fot";
+
 
 const Header=()=> {
 

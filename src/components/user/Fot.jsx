@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/logo.png";
 import { FaHome } from "react-icons/fa";
 import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { BiSolidMoviePlay } from "react-icons/bi";
