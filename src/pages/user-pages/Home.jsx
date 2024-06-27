@@ -12,10 +12,7 @@ function Home() {
     <Banner/>
     <SubHeading/>
     <MovieCard/>
-    <SubHeading/>
-    <MovieCard/>
-    <SubHeading/>
-    <MovieCard/>
+    
    
   
   </div>
