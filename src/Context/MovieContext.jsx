@@ -34,13 +34,15 @@ export function MovieProvider({ children }) {
     };
 
     const deleteMovie = (movieId)=>{
-      
+      setMovies((prevMovies)=>
+       prevMovies.filter((movie) => movie.id !== movieId)
+      )
     };
 
   return (
     <MovieContext.Provider
     value={{
-        movies,addMovie,updateMovie,
+        movies,addMovie,updateMovie,deleteMovie,
     }}
     >
         {children}

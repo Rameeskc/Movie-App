@@ -8,14 +8,13 @@ import YouTube from "react-youtube";
 
 const AdminHome = () => {
   const { movies , deleteMovie } = useMovies();
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
   // Function to extract YouTube ID from URL
   const getYouTubeId = (url) => {
     const regExp =
       /^.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
-    console.log(match);
     return match && match[1].length === 11 ? match[1] : null;
   };
 
@@ -77,14 +76,14 @@ const AdminHome = () => {
 
                 <td>
                 <Link to={`/Admin/EditMovie/${movie.id}`}>
-                  <button className="border-solid border-2 text-center  w-full h-full"
-                   onClick={()=>handleDelete(movie.id)} 
-                  >
+                  <button className="border-solid border-2 text-center  w-full h-full">
                     <FaEdit />
                   </button>
                 </Link>
                 <Link>
-                  <button className="border-solid border-2 text-center">
+                  <button className="border-solid border-2 text-center"
+                    onClick={()=>handleDelete(movie.id)} 
+                  >
                     <FaTrash />
                   </button>
                 </Link>
