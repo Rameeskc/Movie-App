@@ -20,7 +20,6 @@ const MovieAdd = () => {
   const handleSubmit = (values) => {
     addMovie(values)
     navigate("/Admin/Home")
-    console.log(values);
   };
 
   return (

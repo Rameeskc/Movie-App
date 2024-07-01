@@ -11,7 +11,7 @@ const Admin = () => {
         <Route path='/' element={<AdminLayout/>}>  
             <Route path='/Home' element={<AdminHome/>}/>
             <Route path='/MovieAdd' element={<MovieAdd/>}/>
-            <Route path='/EditMovie' element={<EditMovie/>}/>
+            <Route path='/EditMovie/:movieId' element={<EditMovie/>}/>
         </Route>
     </Routes>
   )
